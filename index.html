@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Mascára de Dados</title>
+    <script src="mascara.js" ></script>
+    
+ 
+</head>
+
+<body>
+    
+        <form action="processa.php" method="POST">
+
+            Digite seu CPF:<input type="text" name="cpf" id="cpf" 
+            placeholder="###.###.###-##" onkeyup="mascara('###.###.###-##', this, event, true)" maxlength="14">
+           
+            <br>
+
+            Digite seu RG:<input type="text" name="rg" id="celular" 
+            placeholder="##.###.###-##" onkeyup="mascara('##.###.###-##', this, event, true)" maxlength="13">
+            
+            <br>
+
+            Digite seu Telefone Fixo:<input type="text" name="telefone" id="telefone" 
+            placeholder="(##)####-####" onkeyup="mascara('(##)####-####', this, event, true)" maxlength="13">
+
+            <br>
+
+            Digite seu Telefone Celular:<input type="text" name="celular" id="celular" 
+            placeholder="(##)#####-####" onkeyup="mascara('(##)#####-####', this, event, true)" maxlength="14">
+            
+            <br>
+            
+            Digite seu Email:<input type="text" name="email" id="celular" 
+            placeholder="exemplo@exemplo.com" onkeyup="mascara(`${email.split('')}@${[email.split('')]}.###.##`, this, event, true)" maxlength="60" >  
+
+            <br>
+            
+
+            <input type="submit" value="Enviar">
+            
+
+
+
+
+        </form>
+</body>
+
+</html>
